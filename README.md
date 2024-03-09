@@ -6,9 +6,14 @@ The scanner takes a poorly scanned image, finds the corners of the document, app
 
 #### Here are some examples of images before and after scan:
 
-<img src="./images/image.png">
+<img src="./images/image1.png">
 
 ## Usage
+
+### clone the project 
+```
+git clone https://github.com/sangamprashant/Document-Scanner.git
+```
 
 ### Without input
 
@@ -16,32 +21,39 @@ The scanner takes a poorly scanned image, finds the corners of the document, app
 python scan.py (--images <IMG_DIR> | --image <IMG_PATH>) [-i]
 ```
 
-- The `-i` flag enables interactive mode, where you will be prompted to click and drag the corners of the document. For example, to scan a single image with interactive mode enabled:```python scan.py --image uploads/sam.jpg -i```
+- The `-i` flag enables interactive mode, where you will be prompted to click and drag the corners of the document. For example, to scan a single image with interactive mode enabled:`python scan.py --image uploads/sam.jpg -i`
 
 ![alt text](images/image2.png)
 
-- Alternatively, to scan all images in a directory without any input: 
-```python scan.py --image uploads/sam.jpg```
-check the output folder.
+- Alternatively, to scan all images in a directory without any input:
+  `python scan.py --image uploads/sam.jpg`
+  check the output folder.
 
 ### With Inputs
 
 Create a virtual environment:
-```python -m venv <env-name>```
+`python -m venv <env-name>`
 Activate the virtual environment:
+
 ```
 cd <env-name>/Scripts
 .\activate
 cd ../..
 ```
+
 Install the requirements:
+
 ```
 pip install -r requirements.txt
 ```
+
 Run the server :
+
 ```
 python main.py
 ```
 
-* Open index.html in a browser and ensure that the path to the server is correct.
-* Select the image to upload and see the magic happen.
+- Open index.html in a browser and ensure that the path to the server is correct.
+- Select the image to upload and see the magic happen.
+
+<img src="./images/before_after.gif">
