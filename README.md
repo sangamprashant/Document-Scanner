@@ -57,3 +57,14 @@ python main.py
 - Select the image to upload and see the magic happen.
 
 <img src="./images/before_after.gif">
+
+
+# Links
+
+* [live link](https://sangamprashant.github.io/Document-Scanner/)
+<hr>
+
+- output [server link](https://document-scanner-5nnp.onrender.com/) + response.data.result_path
+- imput [server link](https://document-scanner-5nnp.onrender.com/scan)
+
+![](./images/image3.png)
