@@ -29,7 +29,7 @@
             var uploadedImage = document.getElementById('uploadedImage');
             uploadedImage.src = URL.createObjectURL(file);
 
-            fetch('http://127.0.0.1:5000/scan', {
+            fetch('https://document-scanner-5nnp.onrender.com/scan', {
                 method: 'POST',
                 body: formData
             })
@@ -39,7 +39,7 @@
                     console.log(data)
                     localStorage.setItem("data server", JSON.stringify(data));
                     var processedImage = document.getElementById('processedImage');
-                    processedImage.src = data.result_path;
+                    processedImage.src = "https://document-scanner-5nnp.onrender.com/scan" + data.result_path;
                 } else {
                     console.error('Error:', data.error);
                 }
